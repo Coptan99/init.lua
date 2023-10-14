@@ -41,6 +41,13 @@ return require('packer').startup(function(use)
 		end,
 	}
 
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+
 	use("nvim-treesitter/playground")
 	use("theprimeagen/harpoon")
 	use("mbbill/undotree")
